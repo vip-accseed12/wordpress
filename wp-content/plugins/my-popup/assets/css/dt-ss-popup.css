@@ -1,0 +1,88 @@
+.dt-ss-popup-wrap {
+  display: inline-block;
+}
+
+.dt-ss-popup-open {
+  background: #1e73be;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.dt-ss-popup-open:hover,
+.dt-ss-popup-open:focus-visible {
+  background: #155a94;
+}
+
+.dt-ss-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.dt-ss-popup-modal {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.dt-ss-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f1f1;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.dt-ss-popup-title {
+  margin: 0 36px 16px 0;
+  font-size: 22px;
+}
+
+.dt-ss-popup-form {
+  width: 100%;
+}
+
+.dt-ss-popup-form .wpforms-container {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .dt-ss-popup-overlay {
+    padding: 12px;
+  }
+
+  .dt-ss-popup-modal {
+    padding: 18px 16px;
+    max-height: 92vh;
+  }
+
+  .dt-ss-popup-title {
+    font-size: 20px;
+  }
+
+  .dt-ss-popup-open {
+    width: 100%;
+  }
+}
